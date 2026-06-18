@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <None Update="proposals.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

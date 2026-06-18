@@ -28,15 +28,25 @@ namespace ModulReviewPenilaian
         }
 
         // TK: Automata
-        // Method untuk mengeksekusi transisi state
         public StatusProposal GetNextState(StatusProposal currentState, AksiReview action)
         {
             var key = (currentState, action);
-            if (_transitionTable.TryGetValue(key, out StatusProposal nextState))
+
+            // RE-CONDITION (Syarat Awal)
+            if (!_transitionTable.ContainsKey(key))
             {
-                return nextState;
+                throw new ArgumentException($"Transisi ditolak! Proposal dengan status '{currentState}' tidak bisa melakukan aksi '{action}'.");
             }
-            throw new InvalidOperationException($"Transisi tidak valid: {currentState} tidak bisa melakukan aksi {action}.");
+
+            StatusProposal nextState = _transitionTable[key];
+
+            // POST-CONDITION (Syarat Akhir)
+            if (!Enum.IsDefined(typeof(StatusProposal), nextState))
+            {
+                throw new InvalidOperationException("State tujuan tidak dikenali oleh sistem!");
+            }
+
+            return nextState;
         }
 
         public static StatusProposal ParseStatus(string statusString)

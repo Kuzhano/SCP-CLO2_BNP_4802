@@ -76,6 +76,12 @@ namespace ModulReviewPenilaian
 
         private void ReviewProposal(ProposalReview proposal)
         {
+            // PRE-CONDITION (Syarat Awal)
+            if (proposal == null)
+            {
+                throw new ArgumentNullException(nameof(proposal), "Data proposal hilang atau tidak valid untuk direview.");
+            }
+
             Console.Clear();
             Console.WriteLine("=== DETAIL PROPOSAL ===");
             Console.WriteLine($"ID Proposal   : {proposal.IdProposal}");
