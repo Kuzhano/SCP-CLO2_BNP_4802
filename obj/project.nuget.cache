@@ -1,20 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "dgSpecHash": "l+3iulbKIQk=",
+  "dgSpecHash": "GHVGHySO79U=",
   "success": true,
-  "projectFilePath": "D:\\KPL\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard.csproj",
-=======
-  "dgSpecHash": "GA4ZX5yRpeE=",
-  "success": true,
-  "projectFilePath": "D:\\Visual Studio\\BNP_02\\BNP_02\\BNP_02.csproj",
->>>>>>> origin/Modul-Pengarsipan-dan-Ekspor-Data
-=======
-  "dgSpecHash": "bKkmO/mAByo=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\MSI CYBORG\\source\\repos\\SCP-CLO2_BNP_4802\\ReviewProposal\\ReviewProposal.csproj",
->>>>>>> origin/feature/modul3-review-penilaian
+  "projectFilePath": "D:\\CodeMyLife\\Csharp\\DeLFINA_CLI\\DeLFINA_CLI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

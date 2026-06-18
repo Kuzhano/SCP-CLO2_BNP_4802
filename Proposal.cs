@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Text;
 
-namespace Modul_Pemantauan_dan_Dasboard
+namespace DeLFINA_CLI
 {
     public class Proposal
     {
-        public int Id { get; set; }
-        public string Nama { get; set; }
+        public string IdProposal { get; set; }
         public string Judul { get; set; }
-        public string Status { get; set; }
-        public string TglPresentasi { get; set; }
-        public string Keterangan { get; set; }
+        public string StatusPenerimaan { get; set; } // PENDING, REVISI, DITOLAK, DITERIMA
+        public string LinkPdf { get; set; }
+        public string TanggalSubmisi { get; set; }
+        public string CatatanReview { get; set; }
+        public string Pengaju { get; set; }
+        public string TanggalPresentasi { get; set; }
     }
 }

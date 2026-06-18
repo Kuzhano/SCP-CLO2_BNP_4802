@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ModulReviewPenilaian
+namespace DeLFINA_CLI
 {
     public enum StatusProposal { PENDING, DITERIMA, DITOLAK, REVISI }
     public enum AksiReview { TERIMA, TOLAK, MINTA_REVISI, KEMBALIKAN_PENDING }
@@ -9,7 +9,6 @@ namespace ModulReviewPenilaian
     public class ReviewStateMachine
     {
         // TK: Table-driven Construction
-        // Tabel transisi Automata yang memetakan (CurrentState, Action) -> NextState
         private readonly Dictionary<(StatusProposal, AksiReview), StatusProposal> _transitionTable;
 
         public ReviewStateMachine()
@@ -19,10 +18,8 @@ namespace ModulReviewPenilaian
                 { (StatusProposal.PENDING, AksiReview.TERIMA), StatusProposal.DITERIMA },
                 { (StatusProposal.PENDING, AksiReview.TOLAK), StatusProposal.DITOLAK },
                 { (StatusProposal.PENDING, AksiReview.MINTA_REVISI), StatusProposal.REVISI },
-
                 { (StatusProposal.REVISI, AksiReview.TERIMA), StatusProposal.DITERIMA },
                 { (StatusProposal.REVISI, AksiReview.TOLAK), StatusProposal.DITOLAK },
-
                 { (StatusProposal.DITOLAK, AksiReview.KEMBALIKAN_PENDING), StatusProposal.PENDING }
             };
         }
@@ -32,19 +29,15 @@ namespace ModulReviewPenilaian
         {
             var key = (currentState, action);
 
-            // RE-CONDITION (Syarat Awal)
+            // DbC: PRE-CONDITION (Mencegah transisi ilegal)
             if (!_transitionTable.ContainsKey(key))
-            {
                 throw new ArgumentException($"Transisi ditolak! Proposal dengan status '{currentState}' tidak bisa melakukan aksi '{action}'.");
-            }
 
             StatusProposal nextState = _transitionTable[key];
 
-            // POST-CONDITION (Syarat Akhir)
+            // DbC: POST-CONDITION (Validasi integritas state baru)
             if (!Enum.IsDefined(typeof(StatusProposal), nextState))
-            {
                 throw new InvalidOperationException("State tujuan tidak dikenali oleh sistem!");
-            }
 
             return nextState;
         }
@@ -53,7 +46,7 @@ namespace ModulReviewPenilaian
         {
             if (Enum.TryParse(statusString, true, out StatusProposal status))
                 return status;
-            return StatusProposal.PENDING; // Default
+            return StatusProposal.PENDING;
         }
     }
 }

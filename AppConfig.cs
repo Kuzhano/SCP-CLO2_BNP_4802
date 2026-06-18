@@ -1,30 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
 using System.Text.Json;
 
-namespace SCP_CLO2_BNP_4802
+namespace DeLFINA_CLI
 {
     public class AppConfig
     {
         public string ProposalFilePath { get; set; } = "proposals.json";
+        public string DashboardJudul { get; set; } = "DASHBOARD PEMANTAUAN PROPOSAL";
+        public int DashboardMaxBaris { get; set; } = 10;
 
         public static AppConfig LoadConfiguration()
         {
             string configPath = "appconfig.json";
-            if (File.Exists(configPath))
+            if (!File.Exists(configPath))
             {
-                try
-                {
-                    string jsonString = File.ReadAllText(configPath);
-                    return JsonSerializer.Deserialize<AppConfig>(jsonString) ?? new AppConfig();
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("Gagal membaca appconfig.json, menggunakan konfigurasi default.");
-                }
+                var defaultConfig = new AppConfig();
+                File.WriteAllText(configPath, JsonSerializer.Serialize(defaultConfig, new JsonSerializerOptions { WriteIndented = true }));
+                return defaultConfig;
             }
-            return new AppConfig();
+
+            try
+            {
+                return JsonSerializer.Deserialize<AppConfig>(File.ReadAllText(configPath)) ?? new AppConfig();
+            }
+            catch (JsonException)
+            {
+                return new AppConfig();
+            }
         }
     }
 }

@@ -1,68 +1,69 @@
-﻿// ==========================================
-// API (Internal Contract)
-// ==========================================
-using System.Text.Json;
+﻿using System.Text.Json;
 
-public class UserAccount
+namespace DeLFINA_CLI
 {
-    public string Username { get; set; }
-    public string Password { get; set; }
-    public string Role { get; set; } // "Admin" atau "Dosen"
-}
-
-public interface IAuthApi
-{
-    UserAccount Login(string username, string password);
-}
-
-public class JsonAuthService : IAuthApi
-{
-    private readonly string _dbPath;
-
-    public JsonAuthService(string dbPath)
+    // API (Internal Contract)
+    public class UserAccount
     {
-        // DbC: Pre-condition (Memastikan path tidak null/kosong)
-        if (string.IsNullOrWhiteSpace(dbPath))
-            throw new ArgumentException("Path database tidak boleh kosong.");
-        _dbPath = dbPath;
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Role { get; set; } // "Admin" atau "Dosen"
     }
 
-    public UserAccount Login(string username, string password)
+    public interface IAuthApi
     {
-        // DbC: Pre-condition (Validasi input)
-        if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+        UserAccount Login(string username, string password);
+    }
+
+    public class JsonAuthService : IAuthApi
+    {
+        private readonly string _dbPath;
+
+        public JsonAuthService(string dbPath)
         {
-            Console.WriteLine("[!] Error: Username dan Password harus diisi.");
-            return null;
+            // DbC: Pre-condition (Memastikan path tidak null/kosong)
+            if (string.IsNullOrWhiteSpace(dbPath))
+                throw new ArgumentException("Path database tidak boleh kosong.");
+            _dbPath = dbPath;
         }
 
-        // DbC: Defensive Programming (Mencegah crash jika file terhapus)
-        if (!File.Exists(_dbPath))
+        public UserAccount Login(string username, string password)
         {
-            Console.WriteLine($"[!] Fatal Error: File database '{_dbPath}' tidak ditemukan!");
-            return null;
-        }
-
-        try
-        {
-            string jsonString = File.ReadAllText(_dbPath);
-            var users = JsonSerializer.Deserialize<List<UserAccount>>(jsonString);
-
-            // Mencari user yang cocok
-            if (users != null)
+            // DbC: Pre-condition (Validasi input)
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
-                foreach (var user in users)
+                Console.WriteLine("[!] Error: Username dan Password harus diisi.");
+                return null;
+            }
+
+            // DbC: Defensive Programming (Mencegah crash jika file terhapus)
+            if (!File.Exists(_dbPath))
+            {
+                Console.WriteLine($"[!] Fatal Error: File database '{_dbPath}' tidak ditemukan!");
+                return null;
+            }
+
+            try
+            {
+                string jsonString = File.ReadAllText(_dbPath);
+                var users = JsonSerializer.Deserialize<List<UserAccount>>(jsonString);
+
+                // Mencari user yang cocok
+                if (users != null)
                 {
-                    if (user.Username == username && user.Password == password)
-                        return user; // Login berhasil
+                    foreach (var user in users)
+                    {
+                        if (user.Username == username && user.Password == password)
+                            return user; // Login berhasil
+                    }
                 }
             }
-        }
-        catch (JsonException)
-        {
-            Console.WriteLine("[!] Fatal Error: Format JSON rusak.");
-        }
+            catch (JsonException)
+            {
+                Console.WriteLine("[!] Fatal Error: Format JSON rusak.");
+            }
 
-        return null; // Login gagal
+            return null; // Login gagal
+        }
     }
 }

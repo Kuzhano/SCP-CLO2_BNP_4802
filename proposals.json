@@ -1,34 +1,42 @@
 [
   {
     "IdProposal": "PROP-2026-001",
+    "Pengaju": "Budi Santoso",
     "Judul": "Produksi Video Pembelajaran Rekayasa Perangkat Lunak",
     "LinkPdf": "https://telkomuniversity.sharepoint.com/proposal_rpl.pdf",
     "TanggalSubmisi": "2026-06-18 10:30:00",
     "StatusPenerimaan": "PENDING",
-    "CatatanReview": null
+    "CatatanReview": null,
+    "TanggalPresentasi": null
   },
   {
     "IdProposal": "PROP-2026-002",
+    "Pengaju": "Siti Aminah",
     "Judul": "Hibah Penelitian HLE: AI untuk Evaluasi Esai Otomatis",
     "LinkPdf": "https://telkomuniversity.sharepoint.com/proposal_hle_ai.pdf",
     "TanggalSubmisi": "2026-06-17 14:15:00",
     "StatusPenerimaan": "REVISI",
-    "CatatanReview": "Latar belakang sudah bagus, tapi tolong perjelas rincian RAB (Rencana Anggaran Biaya) di bab 4 sebelum disetujui."
+    "CatatanReview": "Latar belakang sudah bagus, tapi tolong perjelas rincian RAB (Rencana Anggaran Biaya) di bab 4 sebelum disetujui.",
+    "TanggalPresentasi": null
   },
   {
     "IdProposal": "PROP-2026-003",
+    "Pengaju": "Andi Wijaya",
     "Judul": "Pembuatan Konten Microcredential Basis Data Lanjut",
     "LinkPdf": "https://telkomuniversity.sharepoint.com/proposal_db.pdf",
     "TanggalSubmisi": "2026-06-15 09:00:00",
     "StatusPenerimaan": "DITOLAK",
-    "CatatanReview": "Mohon maaf, kuota untuk mata kuliah rumpun sistem informasi sudah penuh untuk semester ini."
+    "CatatanReview": "Mohon maaf, kuota untuk mata kuliah rumpun sistem informasi sudah penuh untuk semester ini.",
+    "TanggalPresentasi": null
   },
   {
     "IdProposal": "PROP-2026-004",
+    "Pengaju": "Rina Melati",
     "Judul": "Video Interaktif: Pengantar Struktur Data",
     "LinkPdf": "https://telkomuniversity.sharepoint.com/proposal_strukdat.pdf",
     "TanggalSubmisi": "2026-06-10 11:45:00",
     "StatusPenerimaan": "DITERIMA",
-    "CatatanReview": "Proposal sangat lengkap dan siap masuk ke fase Pra-Produksi. Silakan jadwalkan kedatangan ke studio CeLOE."
+    "CatatanReview": "Proposal sangat lengkap dan siap masuk ke fase Pra-Produksi. Silakan jadwalkan kedatangan ke studio CeLOE.",
+    "TanggalPresentasi": "2026-07-01 10:00:00"
   }
 ]

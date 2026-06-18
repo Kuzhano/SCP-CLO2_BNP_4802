@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "version": 3,
-=======
   "version": 4,
->>>>>>> origin/feature/modul3-review-penilaian
   "targets": {
     "net10.0": {}
   },
@@ -12,55 +8,23 @@
     "net10.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "C:\\Users\\Rayka\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
->>>>>>> origin/Modul-Pengarsipan-dan-Ekspor-Data
-=======
-    "C:\\Users\\MSI CYBORG\\.nuget\\packages\\": {},
->>>>>>> origin/feature/modul3-review-penilaian
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\KPL\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard.csproj",
-      "projectName": "Modul-Pemantauan-dan-Dasboard",
-      "projectPath": "D:\\KPL\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard.csproj",
-      "packagesPath": "C:\\Users\\Rayka\\.nuget\\packages\\",
-      "outputPath": "D:\\KPL\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard\\obj\\",
-=======
-      "projectUniqueName": "D:\\Visual Studio\\BNP_02\\BNP_02\\BNP_02.csproj",
-      "projectName": "BNP_02",
-      "projectPath": "D:\\Visual Studio\\BNP_02\\BNP_02\\BNP_02.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studio\\BNP_02\\BNP_02\\obj\\",
->>>>>>> origin/Modul-Pengarsipan-dan-Ekspor-Data
-=======
-      "projectUniqueName": "C:\\Users\\MSI CYBORG\\source\\repos\\SCP-CLO2_BNP_4802\\ReviewProposal\\ReviewProposal.csproj",
-      "projectName": "ReviewProposal",
-      "projectPath": "C:\\Users\\MSI CYBORG\\source\\repos\\SCP-CLO2_BNP_4802\\ReviewProposal\\ReviewProposal.csproj",
-      "packagesPath": "C:\\Users\\MSI CYBORG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MSI CYBORG\\source\\repos\\SCP-CLO2_BNP_4802\\ReviewProposal\\obj\\",
->>>>>>> origin/feature/modul3-review-penilaian
+      "projectUniqueName": "D:\\CodeMyLife\\Csharp\\DeLFINA_CLI\\DeLFINA_CLI.csproj",
+      "projectName": "DeLFINA_CLI",
+      "projectPath": "D:\\CodeMyLife\\Csharp\\DeLFINA_CLI\\DeLFINA_CLI.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\CodeMyLife\\Csharp\\DeLFINA_CLI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "C:\\Users\\Rayka\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> origin/Modul-Pengarsipan-dan-Ekspor-Data
-=======
-        "C:\\Users\\MSI CYBORG\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> origin/feature/modul3-review-penilaian
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -73,10 +37,7 @@
       },
       "frameworks": {
         "net10.0": {
-<<<<<<< HEAD
-=======
           "framework": "net10.0",
->>>>>>> origin/feature/modul3-review-penilaian
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -91,22 +52,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "SdkAnalysisLevel": "10.0.200"
-=======
-      "SdkAnalysisLevel": "10.0.100"
->>>>>>> origin/Modul-Pengarsipan-dan-Ekspor-Data
-    },
-    "frameworks": {
-      "net10.0": {
-=======
       "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
         "framework": "net10.0",
->>>>>>> origin/feature/modul3-review-penilaian
         "targetAlias": "net10.0",
         "imports": [
           "net461",
@@ -124,15 +74,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
->>>>>>> origin/Modul-Pengarsipan-dan-Ekspor-Data
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
->>>>>>> origin/feature/modul3-review-penilaian
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
