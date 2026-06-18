@@ -10,19 +10,19 @@ Fase ini berfokus pada keandalan logika *backend*, *Design by Contract*, dan *te
 ## Tim Pengembang & Distribusi Modul
 Sistem ini memecah monolitik menjadi 5 modul terpisah. Setiap *engineer* (mahasiswa) bertanggung jawab atas *branch* Git, pengembangan logika, *testing*, serta injeksi *Defensive Programming* pada modul masing-masing.
 
-| Nama | NIM | Tanggung Jawab | Teknik Konstruksi (Max 2) |
-| :--- | :--- | :--- | :--- |
-| [Nama Anda] | [NIM Anda] | Modul 1: IAM & Main Menu CLI | API & Automata |
-| [Nama Anggota 2] | [NIM Anggota 2] | Modul 2: Pendaftaran Proposal | Parameterization & Runtime Config |
-| [Nama Anggota 3] | [NIM Anggota 3] | Modul 3: Review & Penilaian | Automata & Table-Driven |
-| [Nama Anggota 4] | [NIM Anggota 4] | Modul 4: Dashboard & Tracking | Code Reuse & Runtime Config |
-| [Nama Anggota 5] | [NIM Anggota 5] | Modul 5: Pengarsipan & Ekspor | Parameterization & API |
+| Nama | NIM |
+| :--- | :--- |
+| ABDURRAHMAN SALEH | 103022430010 |
+| WAWAN SAPUTRA | 103022400098 |
+| MOHAMMAD DZAKI AYATILLAH ARYA HUSEIN | 103022400090 |
+| RAYKA AQIL MUMTAZ | 103022400020 
+| M. RAYHAN RAMADHAN AFDHANI | 103022400107 |
 
 ## Development Stack & Arsitektur
 - **Language** : `C#`
 - **Framework**: `.NET 6.0` / `.NET 8.0`
 - **Database** : `Local JSON (.json)` - *File-based storage bypass*
-- **Testing** : `xUnit` / `NUnit` (Digunakan untuk Unit & Performance Testing)
+- **Testing** : `MSTest Test Project` (Digunakan untuk Unit & Performance Testing)
 - **Tools** : `Visual Studio`, `Git`
 
 ## Metrik Kepatuhan CLO2 (*Compliance Checklist*)
