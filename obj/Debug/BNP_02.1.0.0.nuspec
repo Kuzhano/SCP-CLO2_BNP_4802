@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BNP_02</id>
+    <version>1.0.0</version>
+    <authors>BNP_02</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net10.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Visual Studio\BNP_02\BNP_02\bin\Debug\net10.0\BNP_02.runtimeconfig.json" target="lib\net10.0\BNP_02.runtimeconfig.json" />
+    <file src="D:\Visual Studio\BNP_02\BNP_02\bin\Debug\net10.0\BNP_02.dll" target="lib\net10.0\BNP_02.dll" />
+  </files>
+</package>
