@@ -8,23 +8,39 @@
     "net10.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Rayka\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
+>>>>>>> origin/Modul-Pengarsipan-dan-Ekspor-Data
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\KPL\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard.csproj",
       "projectName": "Modul-Pemantauan-dan-Dasboard",
       "projectPath": "D:\\KPL\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard.csproj",
       "packagesPath": "C:\\Users\\Rayka\\.nuget\\packages\\",
       "outputPath": "D:\\KPL\\Modul-Pemantauan-dan-Dasboard\\Modul-Pemantauan-dan-Dasboard\\obj\\",
+=======
+      "projectUniqueName": "D:\\Visual Studio\\BNP_02\\BNP_02\\BNP_02.csproj",
+      "projectName": "BNP_02",
+      "projectPath": "D:\\Visual Studio\\BNP_02\\BNP_02\\BNP_02.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "D:\\Visual Studio\\BNP_02\\BNP_02\\obj\\",
+>>>>>>> origin/Modul-Pengarsipan-dan-Ekspor-Data
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Rayka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> origin/Modul-Pengarsipan-dan-Ekspor-Data
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -51,7 +67,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
+<<<<<<< HEAD
       "SdkAnalysisLevel": "10.0.200"
+=======
+      "SdkAnalysisLevel": "10.0.100"
+>>>>>>> origin/Modul-Pengarsipan-dan-Ekspor-Data
     },
     "frameworks": {
       "net10.0": {
@@ -72,7 +92,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+>>>>>>> origin/Modul-Pengarsipan-dan-Ekspor-Data
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
