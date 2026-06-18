@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿class Program
 {
     static void Main(string[] args)
@@ -154,11 +155,17 @@ namespace Modul_Pengarsipan_dan_Ekspor_Data
 ﻿using SCP_CLO2_BNP_4802;
 
 namespace ModulPendaftaranProposal
+=======
+﻿using System;
+
+namespace ModulReviewPenilaian
+>>>>>>> origin/feature/modul3-review-penilaian
 {
     class Program
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
             // 1. runtime config
             AppConfig config = AppConfig.LoadConfiguration();
 
@@ -171,4 +178,10 @@ namespace ModulPendaftaranProposal
         }
     }
 >>>>>>> origin/Modul-pendaftaran-dosen
+=======
+            ReviewController reviewModule = new ReviewController();
+            reviewModule.TampilkanMenuReview();
+        }
+    }
+>>>>>>> origin/feature/modul3-review-penilaian
 }
