@@ -1,0 +1,14 @@
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\bin\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.exe
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\bin\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.deps.json
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\bin\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.runtimeconfig.json
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\bin\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.dll
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\bin\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.pdb
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\obj\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.GeneratedMSBuildEditorConfig.editorconfig
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\obj\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.AssemblyInfoInputs.cache
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\obj\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.AssemblyInfo.cs
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\obj\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.csproj.CoreCompileInputs.cache
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\obj\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.dll
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\obj\Debug\net10.0\refint\Modul-Pemantauan-dan-Dasboard.dll
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\obj\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.pdb
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\obj\Debug\net10.0\Modul-Pemantauan-dan-Dasboard.genruntimeconfig.cache
+D:\KPL\Modul-Pemantauan-dan-Dasboard\Modul-Pemantauan-dan-Dasboard\obj\Debug\net10.0\ref\Modul-Pemantauan-dan-Dasboard.dll
