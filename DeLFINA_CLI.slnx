@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../DeLFINA_CLI.Tests/DeLFINA_CLI.Tests.csproj" Id="e99e3e19-5030-4d98-a287-66ac6e45d4ff" />
   <Project Path="DeLFINA_CLI.csproj" />
 </Solution>
